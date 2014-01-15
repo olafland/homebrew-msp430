@@ -9,6 +9,8 @@ class Msp430Gdb < Formula
 
   depends_on 'tduehr/msp430/msp430mcu'
   depends_on 'tduehr/msp430/msp430-gcc'
+  depends_on 'tduehr/msp430/msp430-binutils' => :build
+
 
   # --enable-build-with-cxx build with C++ compiler instead of C compiler
   option 'enable-build-with-cxx', 'build with C++ compiler instead of C compiler [untested]'

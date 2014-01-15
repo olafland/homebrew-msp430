@@ -14,6 +14,7 @@ class Msp430Libc < Formula
   depends_on 'tduehr/msp430/msp430mcu'
   depends_on 'gettext' => :build
   depends_on 'tduehr/msp430/msp430-gcc' => :build
+  depends_on 'tduehr/msp430/msp430-binutils' => :build
   
   option 'disable-printf-int64', 'Remove 64-bit integer support to printf formats'
   option 'disable-printf-int32', 'Remove 32-bit integer support from printf formats'
