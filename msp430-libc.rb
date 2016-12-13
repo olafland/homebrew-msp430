@@ -27,7 +27,7 @@ class Msp430Libc < Formula
   end
   
   def install
-    msp430_gcc = Formula.factory('tduehr/msp430/msp430-gcc')
+    msp430_gcc = Formula.factory('olafland/msp430/msp430-gcc')
     args = []
     args << '--disable-printf-int64' if build.include? 'disable-printf-int64'
     args << '--disable-printf-int32' if build.include? 'disable-printf-int32'
