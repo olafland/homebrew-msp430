@@ -79,8 +79,8 @@ class Msp430Gcc < Formula
       # copy include and lib files from msp430mcu to where msp430-gcc searches for them
       # this wouldn't be necessary with a standard prefix
       msp430 = prefix + 'msp430'
-      msp430mcu = Formula.factory('tduehr/msp430/msp430mcu')
-      msp430_binutils = Formula.factory('tduehr/msp430/msp430-binutils')
+      msp430mcu = Formula.factory('olafland/msp430/msp430mcu')
+      msp430_binutils = Formula.factory('olafland/msp430/msp430-binutils')
       ohai "copying #{msp430mcu.prefix+'msp430'} -> #{prefix}"
       cp_r msp430mcu.prefix+"msp430", prefix
       ohai "copying #{msp430_binutils.prefix+'msp430'} -> #{prefix}"
